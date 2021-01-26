@@ -56,3 +56,16 @@ footer .bottom {
   padding: 25px 5%;
   border-top: 1px solid rgb(160, 160, 160);
 }
+
+.location {
+  display: flex;
+  flex-direction: column;
+}
+
+.location h3 {
+  align-self: flex-start;
+}
+
+.location #googlemap {
+  flex-grow: 1;
+}
