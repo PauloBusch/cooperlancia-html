@@ -2,14 +2,21 @@ main {
   height: 150vh;
 }
 
-main section:first-child {
+main section {
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+main section:first-of-type {
   min-height: calc(100vh - 128px);
+  padding: 0;
 }
 
 main section {
   min-height: calc(100vh - 80px);
+  padding: 30px 5% 15px 5%;
 }
 
 main section:nth-child(even) {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(243, 243, 243);
 }
