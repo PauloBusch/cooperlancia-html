@@ -1,0 +1,56 @@
+#home .caption {
+  padding: 0 5%;
+  position: relative;
+  min-height: calc(100vh - 190px);
+  color: var(--blue-primary);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#home .caption .image { 
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../assets/images/bg-main.jpg');
+  background-position: top center;
+  background-size: cover;
+  opacity: .6;
+}
+
+#home .caption .content {
+  margin-left: 15%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home .time {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: var(--red-primary);
+  color: white;
+  font-size: 25px;
+  padding: 25px;
+}
+
+#home .caption h2 {
+  font-size: 35px;
+}
+
+#home .caption ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#home .caption li {
+  padding: 5px;
+}
+
+#home .caption i {
+  padding: 0 10px;
+  font-size: 20px;
+}
