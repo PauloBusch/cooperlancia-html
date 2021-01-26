@@ -1,0 +1,93 @@
+.ambulances {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ambulances li {
+  flex-basis: 15%;
+}
+
+.ambulance {
+  margin: 15px 0;
+  min-width: 300px;
+  height: 350px;
+  background-image: url('../assets/images/ambulance.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ambulance span {
+  padding: 5px;
+  align-self: flex-end;
+  color: white;
+  font-weight: bold;
+}
+
+.ambulance .detail {
+  padding: 5px;
+  position: relative;
+  color: var(--blue-primary);
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: space-between;
+}
+
+.ambulance .cooperlancia {
+  flex-basis: 40%;
+}
+
+.ambulance .about {
+  flex-basis: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ambulance .contact {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.ambulance .contact span,
+.ambulance .contact i
+{
+  padding: 0;
+  font-size: 10px;
+  color: var(--blue-primary);
+}
+
+.ambulance .contact span {
+  padding: 0 2px;
+}
+
+.ambulance img {
+  max-height: 100px;
+  position: absolute;
+  top: -50px;
+  left: 10px;
+}
+
+.ambulance .number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ambulance .number .fix {
+  color: var(--blue-primary);
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.ambulance .operator {
+  font-size: 10px;
+  text-align: justify;
+}
