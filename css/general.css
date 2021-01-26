@@ -3,3 +3,8 @@
   --blue-secondary: #0276cd;
   --red-primary: #ff0000;
 }
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
