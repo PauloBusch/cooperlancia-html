@@ -1,4 +1,15 @@
 main {
   height: 150vh;
-  margin-top: -20px;
+}
+
+main section:first-child {
+  min-height: calc(100vh - 128px);
+}
+
+main section {
+  min-height: calc(100vh - 80px);
+}
+
+main section:nth-child(even) {
+  background-color: rgb(235, 235, 235);
 }
