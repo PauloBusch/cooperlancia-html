@@ -15,20 +15,20 @@ body.stop-transitions * {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) { 
   h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 15px;
   }
 }
 

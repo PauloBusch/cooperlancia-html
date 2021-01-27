@@ -20,6 +20,6 @@ main section:nth-child(odd) {
 
 @media only screen and (max-width: 900px) {
   main section:first-of-type {
-    min-height: calc(100vh - 158px);
+    min-height: auto;
   }
 }
