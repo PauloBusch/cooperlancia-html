@@ -69,3 +69,31 @@ footer .bottom {
 .location #googlemap {
   flex-grow: 1;
 }
+
+@media only screen and (max-width: 1000px) {
+  footer .contact {
+    flex-direction: column;
+  }
+
+  footer .contact > div {
+    margin-bottom: 50px;
+  }
+
+  footer .detail p {
+    margin-left: 15px;
+    text-align: justify;
+  }
+
+  footer .contact i {
+    margin-right: 20px;
+  }
+
+  footer .detail .main {
+    display: flex;
+    align-items: center;
+  }
+
+  .location #googlemap {
+    flex-basis: 300px;
+  }
+}

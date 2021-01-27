@@ -21,7 +21,8 @@
 }
 
 #home .caption .content {
-  width: 45%;
+  width: 60%;
+  margin-left: -1px; 
   background: linear-gradient(to right,white, rgba(255, 255, 255, 0));
   display: flex;
   justify-content: center;
@@ -59,4 +60,10 @@
 #home .caption i {
   padding: 0 10px;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #home .caption .content {
+    width: 90%;
+  }
 }

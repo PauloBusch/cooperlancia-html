@@ -1,7 +1,7 @@
 header {
   z-index: 2;
   position: sticky;
-  top: 0;
+  top: -1px;
 }
 
 .main-menu {
@@ -62,6 +62,7 @@ header {
   top: 0;
   box-sizing: border-box;
   padding: 0 5%;
+  min-height: 80px;
   background-color: white;
   font-weight: bold;
   display: flex;
@@ -70,12 +71,14 @@ header {
 }
 
 .second-menu img {
+  z-index: 1;
   position: absolute;
   width: 120px;
-  top: 8%;
+  top: 20px;
 }
 
 .second-menu ul {
+  transform-origin: top;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -96,4 +99,78 @@ header {
 
 .second-menu a:hover {
   color: var(--blue-secondary);
+}
+
+.second-menu .show {
+  transform: scaleY(1);
+  height: 100%;
+}
+
+.menu {
+  flex-grow: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mobile {
+  display: none;
+  font-size: 40px;
+  padding: 20px 25px;
+}
+
+#mobile:active,
+#mobile:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    top: 0;
+  }
+
+  .main-menu {
+    min-height: 80px;
+  }
+  
+  .main-menu ul li {
+    display: block;
+  }
+
+  .main-menu a {
+    padding: 0;
+  }
+
+  .second-menu {
+    display: block;
+    padding: 0;
+    margin-top: 80px;
+  }
+
+  .second-menu ul {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    transition: .5s;
+    transform: scaleY(0);
+  }
+
+  .second-menu li {
+    background-color: white;
+    border-top: 1px solid rgb(173, 173, 173);
+    display: block;
+  }
+
+  .second-menu a {
+    text-align: center;
+  }
+
+  .social i {
+    font-size: 1.2rem;
+  }
+
+  #mobile {
+    display: block;
+  }
 }
