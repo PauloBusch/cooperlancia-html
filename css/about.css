@@ -36,3 +36,23 @@
 .about-detail li {
   flex-basis: 23%;
 }
+
+@media only screen and (max-width: 700px) {
+  #about ul {
+    flex-direction: column;
+  }
+
+  #about li {
+    margin: 5px 0;
+  }
+
+  .about-main .image {
+    height: calc(320px - 15vw);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #about span {
+    font-size: 12px;
+  }
+}

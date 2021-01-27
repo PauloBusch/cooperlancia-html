@@ -27,7 +27,6 @@
 .header-question h3 {
   margin: 0;
   padding: 0;
-  font-size: 15px;
   font-weight: normal;
 }
 
@@ -44,4 +43,10 @@
   border-bottom-left-radius: 15px;  
   border-bottom-right-radius: 15px;
   background-color: rgb(228, 228, 228);
+}
+
+@media only screen and (max-width: 400px) {
+  .content-question {
+    font-size: 12px;
+  }
 }

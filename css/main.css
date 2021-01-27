@@ -9,10 +9,17 @@ main section:first-of-type {
 }
 
 main section {
+  scroll-margin-top: 75px;
   min-height: calc(100vh - 80px);
-  padding: 30px 5% 15px 5%;
+  padding: 60px 5% 15px 5%;
 }
 
 main section:nth-child(odd) {
   background-color: rgb(243, 243, 243);
+}
+
+@media only screen and (max-width: 900px) {
+  main section:first-of-type {
+    min-height: calc(100vh - 158px);
+  }
 }

@@ -1,3 +1,7 @@
+#home {
+  scroll-margin-top: 160px;
+}
+
 #home .caption {
   padding: 0 5%;
   position: relative;
@@ -43,10 +47,6 @@
   padding: 25px;
 }
 
-#home .caption h2 {
-  font-size: 35px;
-}
-
 #home .caption ul {
   list-style: none;
   margin: 0;
@@ -65,5 +65,47 @@
 @media only screen and (max-width: 1200px) {
   #home .caption .content {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #home .caption {
+    min-height: calc(100vh - 236px);
+  }
+
+  #home .time {
+    font-size: 20px;
+    padding: 25px 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #home .caption .content > * {
+    padding-left: 5%;
+  }
+
+  #home .caption,
+  #home .caption i {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #home .caption {
+    min-height: calc(100vh - 228px);
+  }
+  
+  #home .caption,
+  #home .caption i {
+    padding: 0 5px;
+  }
+
+  #home .time {
+    font-size: 14px;
+    padding: 25px 5%;
+  }
+
+  #home .caption .image {
+    width: 100%;
   }
 }
