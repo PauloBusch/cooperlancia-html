@@ -8,11 +8,12 @@
   margin: 25px 0;
 }
 
-.question:not(.open) .content-question {
-  display: none;
+.question:not(.open) .header-question i {
+  transform: rotate(-180deg);
 }
 
 .header-question {
+  z-index: 1;
   color: white;
   background-color: var(--blue-primary);
   justify-content: space-between;
@@ -31,13 +32,16 @@
 }
 
 .header-question i {
+  transition: .5s;
   font-size: 25px;
 }
 
 .content-question {
+  z-index: 0;
   padding: 15px;
   margin: 0 25px;
-  border-bottom-left-radius: 15px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 15px;  
   border-bottom-right-radius: 15px;
   background-color: rgb(228, 228, 228);
 }
