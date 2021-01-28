@@ -47,6 +47,10 @@ header {
   padding: 15px;
 }
 
+.contact li:first-of-type a {
+  padding-left: 0;
+}
+
 .social i {
   font-size: 1.5rem;
 }
@@ -68,13 +72,6 @@ header {
   display: flex;
   justify-content: space-between;
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
-}
-
-.second-menu img {
-  z-index: 1;
-  position: absolute;
-  width: 120px;
-  top: 20px;
 }
 
 .second-menu ul {
@@ -112,6 +109,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.menu a { 
+  display: flex;
+  padding: 10px 0;
+}
+
+.second-menu img {
+  z-index: 1;
+  position: static;
+  width: 60px;
 }
 
 #mobile {
@@ -179,15 +187,9 @@ header {
   }
 
   .menu a { 
-    display: flex;
     padding: 10px 25px;
   }
-
-  .second-menu img {
-    z-index: 1;
-    position: static;
-    width: 60px;
-  }
+  
 }
 
 @media only screen and (max-width: 350px) {
@@ -198,7 +200,8 @@ header {
 
   .menu a { 
     display: flex;
-    padding: 10px 25px;
+    padding: 10px 0;
+    padding-left: 5%;
   }
 
   .second-menu img {
