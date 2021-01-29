@@ -11,6 +11,10 @@
   transition-timing-function: ease-out;
 }
 
+.slides:hover ~ .actions {
+  opacity: 1;
+}
+
 .slide {
   position: relative;
   width: calc(100vw);
@@ -56,11 +60,17 @@
 }
 
 .actions {
+  opacity: 0;
   width: 100%;
   top: 50%;
   z-index: 1;
   position: absolute;
 }
+
+.actions:hover {
+  opacity: 1;
+}
+
 
 .actions > * {
   z-index: 1;

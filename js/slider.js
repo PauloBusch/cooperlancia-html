@@ -12,7 +12,7 @@ function initSlides() {
   }
 }
 
-const duration = 20000;
+const duration = 10000;
 var animationId;
 
 function configureAnimation() {
