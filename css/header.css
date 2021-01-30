@@ -106,6 +106,10 @@ header {
   color: black;
 }
 
+.second-menu a.active {
+  color: var(--blue-secondary);
+}
+
 .second-menu a:hover {
   color: var(--blue-secondary);
 }
