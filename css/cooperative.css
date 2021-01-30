@@ -1,28 +1,36 @@
-#cooperativa {
+header {
+  top: 0;
+}
+
+.second-menu {
+  margin-top: 0;
+}
+
+#cooperative {
   min-height: calc(100vh - 80px);
   padding: 30px 5% 15px 5%; 
 }
 
-#cooperativa h2 {
+#cooperative h2 {
   text-align: center;
 }
 
-#cooperativa section {
+#cooperative section {
   flex-grow: 1;
   box-sizing: border-box;
 }
 
-#cooperativa section {
+#cooperative section {
   scroll-margin-top: 75px;
   min-height: calc(100vh - 80px);
   padding: 30px 5% 15px 5%;
 }
 
-#cooperativa section:nth-child(odd) {
+#cooperative section:nth-child(odd) {
   background-color: rgb(243, 243, 243);
 }
 
-#cooperativa .card-list {
+#cooperative .card-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -31,7 +39,7 @@
   padding: 0;
 }
 
-#cooperativa .card-list > li {
+#cooperative .card-list > li {
   flex-basis: 49%;
   margin: 15px 0;
   padding: 25px;
@@ -40,46 +48,52 @@
   background: linear-gradient(to right, var(--blue-secondary), var(--blue-primary));
 }
 
-#cooperativa .card-list > li:last-child {
+#cooperative .card-list > li:last-child {
   flex-grow: 1;
 }
 
-#cooperativa .card-list li i {
+#cooperative .card-list li i {
   font-size: 50px;
 }
 
-#cooperativa .options {
+#cooperative .options {
   margin-top: 15px;
   padding: 0 30px;
   list-style: disc;
 }
 
-#cooperativa .options li {
+#cooperative .options li {
   padding: 5px 0;
 }
 
-#cooperativa .card-list li p:last-child {
+#cooperative .card-list li p:last-child {
   margin-bottom: 0;
 }
 
 @media only screen and (max-width: 900px) {
-  #cooperativa section:first-of-type {
+  #cooperative section:first-of-type {
     min-height: auto;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  #cooperativa > ul {
+  #cooperative > ul {
     flex-direction: column;
   }
 
-  #cooperativa > ul > li {
+  #cooperative .card-list > li {
     margin: 5px 0;
+  }
+
+  #cooperative li > i {
+    display: block;
+    margin: 0 auto;
+    width: 45px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  #cooperativa p {
+  #cooperative .card-list li {
     font-size: 12px;
   }
 }
