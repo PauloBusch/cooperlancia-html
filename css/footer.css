@@ -45,9 +45,32 @@ footer .contact a {
   padding: 0;
 }
 
+footer .contact a,
+footer .contact i {
+  transition: .2s;
+}
+
+footer .contact a:hover,
+footer .contact a:hover > i {
+  color: var(--blue-secondary);
+}
+
 footer .contact #googlemap {
   width: 100%;
   height: 100%;
+}
+
+footer .social i {
+  transition: .2s;
+  font-size: 1.5rem;
+}
+
+footer .social i:hover {
+  color: var(--blue-contrast);
+}
+
+footer .social a {
+  padding: 5px;
 }
 
 footer .bottom {
@@ -55,6 +78,15 @@ footer .bottom {
   justify-content: space-between;
   padding: 25px 5%;
   border-top: 1px solid rgb(160, 160, 160);
+}
+
+footer .bottom a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .bottom a:hover {
+  color: var(--blue-secondary);
 }
 
 .location {
@@ -68,6 +100,22 @@ footer .bottom {
 
 .location #googlemap {
   flex-grow: 1;
+}
+
+.fixed-whatsapp {
+  z-index: 2;
+  position: fixed;
+  bottom: 10px;
+  right: 1%;
+}
+
+.fixed-whatsapp a {
+  right: auto;
+  padding: 0;
+}
+
+.fixed-whatsapp img {
+  width: 50px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -98,6 +146,11 @@ footer .bottom {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .fixed-whatsapp {
+    right: 5%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   footer .bottom {

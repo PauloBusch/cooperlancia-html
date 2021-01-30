@@ -1,116 +1,66 @@
-.ambulances {
-  padding: 0;
+#services ul {
+  padding: 15px 0;
   margin: 0;
-  list-style: none;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  list-style: none;
 }
 
-.ambulances li {
-  flex-basis: 15%;
+#services h2 {
+  text-align: center;
 }
 
-.ambulance {
-  margin: 15px 0;
-  min-width: 300px;
-  height: 350px;
+#services li {
+  padding: 25px;
+  color: white;
+  box-sizing: border-box;
+  background: linear-gradient(to right, var(--blue-secondary), var(--blue-primary));
 }
 
-.ambulance .image {
-  height: 80%;
-  background-image: url('../assets/images/ambulance.jpg');
+#services li p:last-child {
+  margin-bottom: 0;
+}
+
+#services i {
+  font-size: 50px;
+}
+
+.service-main li {
+  flex-basis: 49%;
+}
+
+.service-main .image {
+  padding: 0 !important;
+}
+
+.service-main .image-help {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/help.jpg');
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.ambulance span {
-  padding: 5px;
-  align-self: flex-end;
-  color: white;
-  font-weight: bold;
-}
-
-.ambulance .detail {
-  height: 20%;
-  padding: 5px;
-  position: relative;
-  color: var(--blue-primary);
-  background-color: var(--yellow);
-  display: flex;
-  justify-content: space-between;
-}
-
-.ambulance .cooperlancia {
-  flex-basis: 40%;
-}
-
-.ambulance .about {
-  flex-basis: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.ambulance .contact {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-}
-
-.ambulance .contact span,
-.ambulance .contact i
-{
-  padding: 0;
-  font-size: 10px;
-  color: var(--blue-primary);
-}
-
-.ambulance .contact span {
-  padding: 0 2px;
-}
-
-.ambulance img {
-  max-height: 100px;
-  position: absolute;
-  top: -50px;
-  left: 10px;
-}
-
-.ambulance .number {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.ambulance .number .fix {
-  color: var(--blue-primary);
-  padding: 0;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.ambulance .operator {
-  font-size: 10px;
-  text-align: justify;
+.service-detail li {
+  flex-basis: 23%;
 }
 
 @media only screen and (max-width: 700px) {
-  .ambulances li {
-    flex-basis: 100%;
-  }
-  
-  .ambulance {
-    min-width: auto;
+  #services ul {
+    flex-direction: column;
   }
 
-  .ambulance .cooperlancia {
-    flex-basis: 20%;
+  #services li {
+    margin: 5px 0;
   }
-  
-  .ambulance .about {
-    flex-basis: 70%;
+
+  .service-main .image {
+    height: calc(320px - 15vw);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #services p {
+    font-size: 12px;
   }
 }

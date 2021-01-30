@@ -9,13 +9,25 @@
 } 
 
 #home .time {
+  display: flex;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
   background-color: var(--red-primary);
   color: white;
   font-size: 25px;
+}
+
+#home .time a {
+  flex-grow: 1;
   padding: 25px;
+  text-decoration: none;
+}
+
+#home .time a,
+#home .time i {
+  cursor: pointer;
+  color: white;
 }
 
 @media only screen and (max-width: 900px) {
@@ -26,12 +38,11 @@
 
   #home .time {
     font-size: 20px;
+  }
+
+  #home .time a {
     padding: 25px 5%;
   }
-}
-
-@media only screen and (max-width: 600px) {
-  
 }
 
 @media only screen and (max-width: 400px) {

@@ -45,6 +45,14 @@
   background-color: rgb(228, 228, 228);
 }
 
+.content-question p:first-child {
+  margin-top: 0;
+}
+
+.content-question p:last-child {
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 400px) {
   .content-question {
     font-size: 12px;
