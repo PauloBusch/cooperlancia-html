@@ -56,6 +56,16 @@
     margin: 5px 0;
   }
 
+  #services li > i {
+    display: block;
+    margin: 0 auto;
+    width: 45px;
+  }
+
+  #services li > h3 {
+    text-align: center;
+  }
+
   .service-main .image {
     height: calc(320px - 15vw);
   }
