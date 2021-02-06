@@ -89,19 +89,6 @@ footer .bottom a:hover {
   color: var(--blue-secondary);
 }
 
-.location {
-  display: flex;
-  flex-direction: column;
-}
-
-.location h3 {
-  align-self: flex-start;
-}
-
-.location #googlemap {
-  flex-grow: 1;
-}
-
 .fixed-whatsapp {
   z-index: 2;
   position: fixed;
@@ -164,7 +151,7 @@ footer .bottom a:hover {
   }
 
   footer .contact li {
-    font-size: 15px;
+    font-size: 12px;
   }
   
   footer .detail .main {

@@ -17,8 +17,8 @@
   <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="css/general.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
-  <link rel="stylesheet" type="text/css" href="css/slider.css">
-  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/work.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
@@ -45,45 +45,26 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Serviços</a></li>
         <li><a href="cooperative.html">Cooperativa</a></li>
-        <li><a href="#about" class="active">Sobre</a></li>
+        <li><a href="about.html">Sobre</a></li>
       </ul>
     </div>
   </header>
   
   <main>
-    <section id="about">
-      <h2>Quem Somos?</h2>
-      <ul class="card-list">
-        <li>
-          <i class="fas fa-hospital"></i>
-          <p>A Cooperlância é uma Empresa especializa em Remoções Hospitalares de pacientes de baixa, 
-            média e alta complexidade, Terceirização de Serviços na Área de Saúde e Home Care.</p>
-        </li>
-        <li>
-          <i class="fas fa-ambulance"></i>	
-          <p>Nossa frota de Ambulâncias é composta por viaturas novas e aparelhadas conforme os mais altos padrões de segurança.</p>
-        </li>
-        <li>
-          <i class="fas fa-user-md"></i>
-          <p>Com equipe multidisciplinar integralmente treinada, obedecendo rigorosamente a legislação vigente, 
-            em todos os aspectos legais.</p>
-        </li>
-        <li>
-          <i class="fas fa-chart-line"></i>
-          <p>A nossa missão é promover bem-estar e qualidade de vida, por meio dos serviços de UTI-Móvel, 
-            atendimento médico pré-hospitalar, serviços de área protegida, 
-            cobertura de eventos e transporte de pacientes das mais variadas modalidades, 
-            atendendo em todo o território nacional.</p>
-        </li>
-        <li>
-          <i class="fas fa-dove"></i>	
-          <p>A filosofia da empresa é ser referência de qualidade dentro dos serviços prestados, 
-            buscando sempre o melhor atendimento e serviço ao cliente, 
-            com equipamentos modernos, ambulâncias de alto padrão e equipe técnica de 
-            profissionais altamente qualificados e treinados para aplicarem as mais modernas 
-            práticas de atendimento necessários que se adaptam melhor a cada perfil de paciente.</p>
-        </li>
-      </ul>
+    <section id="work">
+      <form id="form-join-work">
+        <h2>Venha trabalhar com a gente!</h2>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email" required/>
+        </div>
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Nome" required/>
+        </div>
+        <div class="form-group">
+          <textarea name="message" maxlength="500" rows="5" placeholder="Mensagem"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 

@@ -1,3 +1,27 @@
+#services {
+  min-height: calc(100vh - 80px);
+  padding: 30px 5% 15px 5%; 
+}
+
+#services h2 {
+  text-align: center;
+}
+
+#services {
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+#services {
+  scroll-margin-top: 75px;
+  min-height: calc(100vh - 80px);
+  padding: 30px 5% 15px 5%;
+}
+
+#services:nth-child(odd) {
+  background-color:white ;
+}
+
 #services ul {
   padding: 15px 0;
   margin: 0;
@@ -17,6 +41,10 @@
   color: white;
   box-sizing: border-box;
   background: linear-gradient(to right, var(--blue-secondary), var(--blue-primary));
+}
+
+#services li.fill {
+  flex-grow: 1;
 }
 
 #services li p:last-child {
