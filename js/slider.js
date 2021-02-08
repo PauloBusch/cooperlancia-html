@@ -1,16 +1,6 @@
 $(function() {
-  initSlides();
   configureAnimation();
 });
-
-function initSlides() {
-  const $sliders = $('.slider').get();
-  for (const $slider of $sliders.map(s => $(s))) {
-    const $slides = $slider.find('.slide');
-    const width = `${($slides.length * 100)}%`;
-    $slider.find('.slides').css('width', width);
-  }
-}
 
 const duration = 10000;
 var animationId;

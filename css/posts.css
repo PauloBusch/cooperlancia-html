@@ -1,0 +1,23 @@
+#posts-instagram iframe {
+  width: 100%; 
+  height: 920px;
+}
+
+@media only screen and (max-width: 1410px) {
+  #posts-instagram iframe {
+    height: 1330px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  #posts-instagram iframe {
+    height: 2590px;
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+  #posts-instagram iframe {
+    height: calc(550vw);
+  }
+}
