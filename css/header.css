@@ -43,6 +43,11 @@ header {
   padding: 15px;
 }
 
+.main-menu .contact {
+  display: flex;
+  align-items: center;
+}
+
 .main-menu .contact a,
 .main-menu .contact i {
   transition: .2s;
@@ -166,6 +171,12 @@ header {
 
   .main-menu a {
     padding: 0;
+  }
+  
+  .main-menu .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .second-menu {
