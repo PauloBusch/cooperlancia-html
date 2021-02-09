@@ -136,8 +136,8 @@ header {
 .second-menu img {
   z-index: 1;
   position: static;
-  width: 60px;
-  height: 60px;
+  width: 250px;
+  height: calc(250px * 0.2411);
 }
 
 #mobile {
@@ -225,7 +225,7 @@ header {
   .second-menu img {
     z-index: 1;
     position: static;
-    width: 50px;
-    height: 50px;
+    width: 160px;
+    height: calc(160px * 0.2411);
   }
 }

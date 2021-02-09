@@ -55,9 +55,9 @@ footer .contact a:hover > i {
   color: var(--blue-secondary);
 }
 
-footer .contact #googlemap {
-  width: 100%;
-  height: 100%;
+footer .contact .main img {
+  width: 220px;
+  height: calc(220px * 0.2411);
 }
 
 footer .social i {
@@ -115,21 +115,11 @@ footer .bottom a:hover {
   }
 
   footer .detail p {
-    margin-left: 15px;
     text-align: justify;
   }
 
   footer .contact i {
     margin-right: 20px;
-  }
-
-  footer .detail .main {
-    display: flex;
-    align-items: center;
-  }
-
-  .location #googlemap {
-    flex-basis: 300px;
   }
 }
 
@@ -152,10 +142,6 @@ footer .bottom a:hover {
 
   footer .contact li {
     font-size: 12px;
-  }
-  
-  footer .detail .main {
-    flex-direction: column;
   }
 
   footer .social {
