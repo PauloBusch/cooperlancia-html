@@ -54,7 +54,7 @@
   max-height: 300px;
 }
 
-#form-join-work button {
+#form-join-work button[type=submit] {
   font-size: 18px;
   width: 100%;
   padding: 15px;
@@ -64,11 +64,59 @@
   background-color: var(--blue-secondary);
 }
 
-#form-join-work button:hover {
+#form-join-work button[type=submit]:hover {
   background-color: #188ae0;
 }
 
+.form-control {
+  width: 100%;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid rgb(194, 194, 194);
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+.file-input {
+  padding: 0;
+}
+
+.file-input label {
+  color: var(--gray);
+  padding: 10px;
+  font-size: 15px;
+}
+
+.file-input button {
+  outline: none;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #0276cd;
+  transition: .2s;
+}
+
+.file-input button:active{
+  transform: scale(0.99);
+}
+
+.file-input button:hover {
+  background-color: #0059b9;
+}
+
 @media only screen and (max-width: 600px) {
+  .form-control {
+    font-size: 15px;
+  }
+  
+  .file-input button {
+    font-size: 15px;
+  }
+
   #form-join-work .form-group > *,
   #form-join-work button {
     font-size: 15px;
@@ -76,6 +124,14 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .form-control {
+    font-size: 14px;
+  }
+  
+  .file-input button {
+    font-size: 14px;
+  }
+
   #form-join-work .form-group > *,
   #form-join-work button {
     font-size: 14px;

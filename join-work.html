@@ -60,6 +60,11 @@
         <div class="form-group">
           <input type="text" name="name" placeholder="Nome" required/>
         </div>
+        <div class="form-control file-input">
+          <button id="select-curriculum" type="button">Selecionar o currículo</button>
+          <label>Selecione um currículo...</label>
+          <input style="display: none;" name="curriculum" accept=".pdf" type="file" required/>
+        </div>
         <div class="form-group">
           <textarea name="message" maxlength="500" rows="5" placeholder="Mensagem"></textarea>
         </div>
@@ -114,6 +119,7 @@
   
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/work.js"></script>
   <script src="js/transitions.js"></script>
 </body>
 </html>
